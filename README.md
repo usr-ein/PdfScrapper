@@ -23,7 +23,7 @@ This will download all the pdfs available when crawling the provided domains/url
 
 You give it start urls and a domain, and it will do the following:
 
-1. Look for all links (<a href=..>) in the HTML source code
+1. Look for all links (`<a href=..>`) in the HTML source code
 2. If the link points to a PDF file, download it
 3. If the link doesn't point to a PDF file, use that link and go to step 1.
 
