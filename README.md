@@ -1,6 +1,6 @@
 # Simple PDF scrapper
 
-## Usage:
+## Usage
 
 Install the dependencies: `pip3 install urllib3 scrapy`
 
@@ -19,7 +19,7 @@ scrapy runspider spider.py | tee logs
 
 This will download all the pdfs available when crawling the provided domains/urls.
 
-## How it works:
+## How it works
 
 You give it start urls and a domain, and it will do the following:
 
@@ -29,7 +29,7 @@ You give it start urls and a domain, and it will do the following:
 
 It's really crude but it does its job. The most important part is correctly 
 parsing the file name (to check if it's a pdf) because if you bodge that part,
-you could end up with taking the GET arugments (stuff like ?id=1&truc=machin)
+you could end up with taking the GET arugments (stuff like `?id=1&truc=machin`)
 as the file name. That's why Python's urllib.parse.urlparse is use as its supposed
 to be robust.
 
